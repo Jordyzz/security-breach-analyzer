@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.tag {
+  margin-left: 10px;
+  border: 1px solid var(--fontColor);
+  border-radius: 25px;
+  font-size: 12px;
+  padding: 8px;
+
+  &:first-of-type {
+    margin-left: 0px;
+  }
+}

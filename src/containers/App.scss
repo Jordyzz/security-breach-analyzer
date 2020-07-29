@@ -1,0 +1,23 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  height: 100%;
+}
+
+.toolbar {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+}
+
+.themeBtn {
+  border-radius: 50%;
+  margin-left: auto;
+}
+
+.icon {
+  fill: var(--backgroundSecondaryColor);
+}

@@ -1,0 +1,58 @@
+.container {
+  margin-top: 15px;
+  background-color: var(--backgroundSecondaryColor);
+  width: 70%;
+  height: 70px;
+  border-radius: 10px;
+  padding: 10px;
+  overflow: hidden;
+  transition: height cubic-bezier(0.6, 0.04, 0.98, 0.335) 0.3s;
+
+  &.open {
+    height: 350px;
+  }
+}
+
+.downCaret {
+  transition: all ease-in 0.3s;
+}
+
+.flipped {
+  transform: rotate(180deg);
+  transition: all ease-in 0.3s;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.logo {
+  width: 30px;
+  height: 30px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.titleText {
+  margin-left: 15px;
+}
+
+.date {
+  margin-left: auto;
+  margin-right: 50px;
+}
+
+.content {
+  padding: 10px;
+  opacity: 0;
+  transition: cubic-bezier(0.6, 0.04, 0.98, 0.335) 0.3s;
+  transition-property: opacity, visibility;
+  visibility: hidden;
+  &.contentOpen {
+    opacity: 1;
+    visibility: visible;
+  }
+}
