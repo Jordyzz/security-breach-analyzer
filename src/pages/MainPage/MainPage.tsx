@@ -6,7 +6,7 @@ import BreachCollapse from '@components/BreachCollapse';
 import { breachService } from '@core/BreachService';
 import Button from '@components/Button';
 import history from '@core/history';
-import { useParams, useLocation } from 'react-router';
+import { useLocation } from 'react-router';
 
 function MainPage() {
   const location = useLocation();

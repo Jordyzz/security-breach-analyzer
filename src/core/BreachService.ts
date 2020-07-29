@@ -1,5 +1,3 @@
-import { pick } from 'lodash';
-
 import { httpService } from './HttpService/HttpService';
 import { dispatch, getState } from '@redux/store';
 import { loadBreaches } from '@redux/breaches';

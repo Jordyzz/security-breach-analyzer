@@ -15,11 +15,13 @@
 
 .downCaret {
   transition: all ease-in 0.3s;
+  fill: var(--fontColor);
 }
 
 .flipped {
+  fill: var(--fontColor);
   transform: rotate(180deg);
-  transition: all ease-in 0.3s;
+  transition: transform ease-in 0.3s;
 }
 
 .header {
