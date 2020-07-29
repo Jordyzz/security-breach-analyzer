@@ -1,7 +1,7 @@
 {
-  "name": "guardio-breacher",
+  "name": "security-breacher",
   "version": "0.0.1",
-  "description": "Guardio home assignment",
+  "description": "security breach analyzer",
   "main": "src/index.tsx",
   "scripts": {
     "start": "node server.js",
