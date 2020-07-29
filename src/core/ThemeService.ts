@@ -29,7 +29,7 @@ class ThemeService {
       this.setVariable(key, this.vars[key]);
     }
 
-    dispatch(setTheme(selectedTheme));
+    dispatch(setTheme(selectedTheme || 'light'));
   }
 
   toggleTheme() {
