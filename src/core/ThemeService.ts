@@ -28,13 +28,14 @@ class ThemeService {
     for (let key in this.vars) {
       this.setVariable(key, this.vars[key]);
     }
+
+    dispatch(setTheme(selectedTheme));
   }
 
   toggleTheme() {
     const activeTheme = getState().config.theme;
     const newTheme = activeTheme === 'light' ? 'dark' : 'light';
     this.init(newTheme);
-    dispatch(setTheme(newTheme));
     storageService.set('theme', newTheme);
   }
 

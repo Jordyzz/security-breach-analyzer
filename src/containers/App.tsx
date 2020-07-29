@@ -13,7 +13,7 @@ import { useSelector } from '@src/redux/useSelector';
 
 function App() {
   const { theme } = useSelector(state => state.config);
-
+  console.log(theme);
   return (
     <Router history={history}>
       <div className={styles.wrapper}>
